@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+// this file checks wheter the given number is odd or even
+
 int main()
 {
     while (true)
