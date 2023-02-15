@@ -3,7 +3,7 @@
 
 using namespace std;
 
-/*This program takes an array and removes the duplicates in the array*/
+/*This program takes an array and removes the duplicates in the array */
 
 int main()
 {
