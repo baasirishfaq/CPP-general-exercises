@@ -3,35 +3,36 @@
 
 using namespace std;
 
+/*This program takes an array and removes the duplicates in the array*/
+
 int main()
 {
-    int arr[4], index = -1;
-    cout << "enter 4 values in array :";
-    for (int i = 0; i < 4; i++)
+    int n;
+    cout << "enter the length of array :";
+    cin >> n;
+    int arr[n];
+    cout << "enter values in array :";
+    for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < n; i++)
     {
-        for (int j = i + 1; j < 4; j++)
+        for (int j = i + 1; j < n; j++)
         {
             if (arr[i] == arr[j])
             {
-                index = i;
-                break;
+                for (int k = j; k < n; k++)
+                {
+                    arr[k] = arr[k + 1];
+                }
+                n--;
+                j--;
             }
         }
-        if (index != -1)
-        {
-            for (i = index; i < 4 - 1; i++)
-            {
-                arr[i] = arr[i + 1];
-            }
-            cout << "New Array : ";
-            for (i = 0; i < 4 - 1; i++)
-            {
-                cout << arr[i];
-            }
-        }
+    }
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i];
     }
 }
