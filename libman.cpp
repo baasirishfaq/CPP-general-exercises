@@ -40,7 +40,7 @@ int main()
             cin >> lib[count].id;
             cout << "enter book name" << endl;
             cin.getline(lib[count].name, 100, '-');
-            // cin >> lib[count].name, cant use spaces while using this type of value catcher;
+            // cin >> lib[count].name, can't use spaces while using this type of value catcher;
             cout << "enter book author" << endl;
             cin.getline(lib[count].author, 100, '-');
             // cin >> lib[count].author;
