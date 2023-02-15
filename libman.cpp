@@ -10,11 +10,11 @@ class Library
 public:
     int bookno;
     int id;
+    int price;
+    int pages;
     char name[50];
     char author[50];
     char student[12];
-    int price;
-    int pages;
 };
 
 int main()
