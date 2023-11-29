@@ -3,24 +3,23 @@
 
 using namespace std;
 
-int fuelcal(int dis)
-{
-    int fuel;
-    fuel = dis * 10;
-    if (fuel < 100)
-    {
-        cout << "reqd fuel is 100 ";
-    }
-    else
-    {
-        cout << "reqd fuel is " << fuel;
-    }
-}
+// this is used for daily practice....
 
 int main()
 {
-    int dis;
-    cout << "enter the distance you have to go :";
-    cin >> dis;
-    fuelcal(dis);
+    int n, arr[n];
+    cout << "enter limit for array :";
+    cin >> n;
+
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+    cout << "elements of array are";
+    {
+        for (int i = 0; i < n; i++)
+        {
+            cout << arr[i];
+        }
+    }
 }
