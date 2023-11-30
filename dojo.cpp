@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int prod, arr[5];
+    int sum = 0, temp = 1, prod, arr[5];
     cout << "enter 5 nums into array :";
 
     for (int i = 0; i < 5; i++)
@@ -20,6 +20,22 @@ int main()
 
     for (int i = 0; i < 5; i++)
     {
-        cin >> arr[i];
+        temp = temp * arr[i];
+    }
+    prod = temp;
+    cout << "product is = " << prod << endl;
+    for (int i = 0; i < 5; i++)
+    {
+        sum = sum + arr[i];
+    }
+    cout << "sum = " << sum << endl;
+
+    if (prod % sum == 0)
+    {
+        cout << "yeah";
+    }
+    else
+    {
+        cout << "nah";
     }
 }
