@@ -3,33 +3,23 @@
 
 using namespace std;
 
-// this is used for daily practice....
-
 int main()
 {
-    int n, max = 0;
-    cout << "enter limit for array :";
-    cin >> n;
-    int arr[n];
-    cout << "enter elements in array :";
-    for (int i = 0; i < n; i++)
+    int prod, arr[5];
+    cout << "enter 5 nums into array :";
+
+    for (int i = 0; i < 5; i++)
     {
         cin >> arr[i];
     }
-    cout << "elements of array are: " << endl;
-    {
-        for (int i = 0; i < n; i++)
-        {
-            cout << arr[i] << endl;
-        }
-    }
+    // cout << "TEST PRINT " << endl;
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     cout << arr[i];
+    // }
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < 5; i++)
     {
-        if (arr[i] > max)
-        {
-            max = arr[i];
-        }
+        cin >> arr[i];
     }
-    cout << "largest number " << max;
 }
