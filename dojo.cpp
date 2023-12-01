@@ -5,37 +5,14 @@ using namespace std;
 
 int main()
 {
-    int sum = 0, temp = 1, prod, arr[5];
-    cout << "enter 5 nums into array :";
+    int stockprice[6] = {7, 1, 5, 3, 6, 4};
+    int mini = stockprice[0], profit = 0;
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 1; i < 6; i++)
     {
-        cin >> arr[i];
+        int cost = stockprice[i] - mini;
+        profit = max(profit, cost);
+        mini = min(mini, stockprice[i]);
     }
-    // cout << "TEST PRINT " << endl;
-    // for (int i = 0; i < 5; i++)
-    // {
-    //     cout << arr[i];
-    // }
-
-    for (int i = 0; i < 5; i++)
-    {
-        temp = temp * arr[i];
-    }
-    prod = temp;
-    cout << "product is = " << prod << endl;
-    for (int i = 0; i < 5; i++)
-    {
-        sum = sum + arr[i];
-    }
-    cout << "sum = " << sum << endl;
-
-    if (prod % sum == 0)
-    {
-        cout << "yeah";
-    }
-    else
-    {
-        cout << "nah";
-    }
+    cout << "max profit is " << profit;
 }
