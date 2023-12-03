@@ -5,15 +5,18 @@ using namespace std;
 
 int main()
 {
-    int cost;
-    int stockprice[6]{7, 1, 5, 3, 6, 4};
-    int mini = stockprice[0], profit = 0;
-
-    for (int i = 1; i < 6; i++)
+    int n, sum = 0;
+    cout << "enter array lim :";
+    cin >> n;
+    int arr[n];
+    for (int i = 0; i < n; i++)
     {
-        cost = stockprice[i] - mini;
-        profit = max(profit, cost);
-        mini = min(mini, stockprice[i]);
+        cin >> arr[i];
     }
-    cout << "max profit is " << profit;
+
+    for (int i = 0; i < n; i++)
+    {
+        sum = sum + arr[i];
+    }
+    cout << "total sum of elements in array is " << sum;
 }
