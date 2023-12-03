@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int n, sum = 0;
+    int n;
     cout << "enter array lim :";
     cin >> n;
     int arr[n];
@@ -14,9 +14,14 @@ int main()
         cin >> arr[i];
     }
 
+    cout << "array elements are :" << endl;
     for (int i = 0; i < n; i++)
     {
-        sum = sum + arr[i];
+        cout << arr[i];
     }
-    cout << "total sum of elements in array is " << sum;
+    cout << "reverse array is : " << endl;
+    for (int j = n - 1; j >= 0; j--)
+    {
+        cout << arr[j];
+    }
 }
