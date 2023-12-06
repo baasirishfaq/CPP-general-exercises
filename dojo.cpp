@@ -5,9 +5,10 @@ using namespace std;
 
 int main()
 {
-    int a, b, sum = 0;
+    int a, b, sum = 0, diff;
     cout << "enter 2 numbers :";
     cin >> a >> b;
     sum = a + b;
-    cout << sum;
+    diff = a - b;
+    cout << sum << diff;
 }
