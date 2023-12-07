@@ -10,5 +10,5 @@ int main()
     cin >> a >> b;
     sum = a + b;
     diff = a - b;
-    cout << sum << diff;
+    cout << "Sum is " << sum << " Diff is " << diff;
 }
