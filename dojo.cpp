@@ -5,10 +5,15 @@ using namespace std;
 
 int main()
 {
-    int a, b, sum = 0, diff;
-    cout << "enter 2 numbers :";
-    cin >> a >> b;
-    sum = a + b;
-    diff = a - b;
-    cout << "Sum is " << sum << " Diff is " << diff;
+    int max = 0, secondmax;
+    int arr[5] = {1, 2, 3, 7, 5};
+    for (int i = 0; i <= 5; i++)
+    {
+        if (arr[i] > max)
+        {
+            max = arr[i];
+        }
+        secondmax = arr[i - 1];
+    }
+    cout << "largest element in array is " << max;
 }
