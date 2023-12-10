@@ -11,9 +11,17 @@ int main()
     {
         if (arr[i] > max)
         {
+            secondmax = max;
             max = arr[i];
         }
-        secondmax = arr[i - 1];
+        else
+        {
+            if (arr[i] > secondmax and arr[i] < max)
+            {
+                secondmax = arr[i];
+            }
+        }
+        cout << secondmax;
     }
     cout << "largest element in array is " << max;
 }
