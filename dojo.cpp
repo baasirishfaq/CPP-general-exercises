@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int max = 0, secondmax;
+    int max = 0, secondmax = 0;
     int arr[5] = {1, 2, 3, 7, 5};
     for (int i = 0; i <= 5; i++)
     {
@@ -21,7 +21,6 @@ int main()
                 secondmax = arr[i];
             }
         }
-        cout << secondmax;
     }
-    cout << "largest element in array is " << max;
+    cout << "second largest element is " << secondmax;
 }
