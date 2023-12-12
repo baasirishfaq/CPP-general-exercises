@@ -5,22 +5,21 @@ using namespace std;
 
 int main()
 {
-    int max = 0, secondmax = 0;
-    int arr[5] = {1, 2, 3, 7, 5};
-    for (int i = 0; i <= 5; i++)
+    int n, key;
+    cout << "enter array len :";
+    cin >> n;
+    int arr[n];
+    for (int i = 0; i < n; i++)
     {
-        if (arr[i] > max)
+        cin >> arr[i];
+    }
+    cout << "which ele to find ;";
+    cin >> key;
+    for (int j = 0; n < 5; j++)
+    {
+        if (arr[j] == key)
         {
-            secondmax = max;
-            max = arr[i];
-        }
-        else
-        {
-            if (arr[i] > secondmax and arr[i] < max)
-            {
-                secondmax = arr[i];
-            }
+            cout << "element found in array";
         }
     }
-    cout << "second largest element is " << secondmax;
 }
