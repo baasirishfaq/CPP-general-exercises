@@ -13,13 +13,13 @@ int main()
     {
         cin >> arr[i];
     }
-    cout << "which ele to find ;";
+    cout << "which ele to find :";
     cin >> key;
-    for (int j = 0; n < 5; j++)
+    for (int j = 0; j < 5; j++)
     {
         if (arr[j] == key)
         {
-            cout << "element found in array";
+            cout << "element found in array at index number " << j;
         }
     }
 }
