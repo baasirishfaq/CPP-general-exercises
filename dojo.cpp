@@ -19,7 +19,7 @@ int main()
     {
         if (arr[j] == key)
         {
-            cout << "element found in array at index number " << j;
+            cout << "element found in array at index number " << j << " and is the " << arr[j] << " element of array";
         }
     }
 }
