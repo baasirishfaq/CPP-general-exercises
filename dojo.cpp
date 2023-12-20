@@ -5,21 +5,19 @@ using namespace std;
 
 int main()
 {
-    int n, key;
-    cout << "enter array len :";
+    int n;
+    cout << "enter array limit :";
     cin >> n;
     int arr[n];
+
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
-    cout << "which ele to find :";
-    cin >> key;
-    for (int j = 0; j < 5; j++)
+    cout << "the elements in the array are :" << endl;
+
+    for (int i = 0; i < n; i++)
     {
-        if (arr[j] == key)
-        {
-            cout << "element found in array at index number " << j << " and is the " << arr[j] << " element of array";
-        }
+        cout << arr[i];
     }
 }
