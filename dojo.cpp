@@ -14,9 +14,9 @@ int main()
     {
         cin >> arr[i];
     }
-    cout << "the elements in the array are :" << endl;
+    cout << "the elements in the array are reversed :" << endl;
 
-    for (int i = 0; i < n; i++)
+    for (int i = n - 1; i >= 0; i--)
     {
         cout << arr[i];
     }
