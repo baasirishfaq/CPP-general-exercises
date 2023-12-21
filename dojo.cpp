@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int n;
+    int n, checker;
     cout << "enter array limit :";
     cin >> n;
     int arr[n];
@@ -14,10 +14,20 @@ int main()
     {
         cin >> arr[i];
     }
-    cout << "the elements in the array are reversed :" << endl;
 
-    for (int i = n - 1; i >= 0; i--)
+    for (int i = 0; i < n; i++)
     {
-        cout << arr[i];
+        for (int j = i + 1; j < n; j++)
+        {
+            checker = arr[j] - arr[i];
+        }
+    }
+    if (checker > 1)
+    {
+        cout << "number missing " << endl;
+    }
+    else
+    {
+        cout << "no missing number" << endl;
     }
 }
