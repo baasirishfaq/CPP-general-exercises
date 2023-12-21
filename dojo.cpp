@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int n, checker;
+    int n, checker, sn, missingnum, sa = 0;
     cout << "enter array limit :";
     cin >> n;
     int arr[n];
@@ -15,19 +15,14 @@ int main()
         cin >> arr[i];
     }
 
+    sn = n * (n + 1) / 2;
     for (int i = 0; i < n; i++)
     {
-        for (int j = i + 1; j < n; j++)
-        {
-            checker = arr[j] - arr[i];
-        }
+        sa = sa + arr[i];
     }
-    if (checker > 1)
-    {
-        cout << "number missing " << endl;
-    }
-    else
-    {
-        cout << "no missing number" << endl;
-    }
+    cout << "sn " << sn << endl;
+    cout << "sa " << sa << endl;
+
+    missingnum = sn - sa;
+    cout << "missing num is " << missingnum;
 }

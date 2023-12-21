@@ -1,4 +1,2 @@
-    // for (int j = n; j > 0; j--)
-    // {
-    //     cout << arr[j];
-    // }
+    // missingnum = sn - sa;
+    // cout << "missing num is " << missingnum;
