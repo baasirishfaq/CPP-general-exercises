@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int n, checker, sn, missingnum, sa = 0;
+    int n, flag = 0;
     cout << "enter array limit :";
     cin >> n;
     int arr[n];
@@ -15,14 +15,22 @@ int main()
         cin >> arr[i];
     }
 
-    sn = n * (n + 1) / 2;
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n - 1; i++)
     {
-        sa = sa + arr[i];
+        for (int j = i + 1; i < n; j++)
+        {
+            if (arr[i] == arr[j])
+            {
+                flag = 1;
+            }
+        }
     }
-    cout << "sn " << sn << endl;
-    cout << "sa " << sa << endl;
-
-    missingnum = sn - sa;
-    cout << "missing num is " << missingnum;
+    if (flag == 1)
+    {
+        cout << "there is a duplicate in array";
+    }
+    else
+    {
+        cout << "no duplicate in array ";
+    }
 }
