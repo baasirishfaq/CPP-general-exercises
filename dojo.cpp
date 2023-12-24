@@ -22,6 +22,7 @@ int main()
             if (arr[j] == arr[k])
             {
                 flag = 1;
+                cout << "element " << arr[k] << " has a duplicate" << endl;
             }
         }
         j++;
@@ -29,7 +30,7 @@ int main()
 
     if (flag == 1)
     {
-        cout << "there is a duplicate in array";
+        // only to check if there is a duplicate without specifing which element has a duplicate...
     }
     else
     {
