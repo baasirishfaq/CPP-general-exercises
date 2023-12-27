@@ -30,7 +30,7 @@ int main()
 
     if (flag == 1)
     {
-        // only to check if there is a duplicate without specifing which element has a duplicate...
+        // only to check if there is a duplicate without specifing which element has a duplicate....
     }
     else
     {
