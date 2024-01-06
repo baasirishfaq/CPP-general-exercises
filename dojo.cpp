@@ -8,11 +8,20 @@ int main()
     int n;
     cin >> n;
 
-    for (int i = 0; i <= n; i++)
+    if (n % 3 == 0 && n % 5 == 0)
     {
-        if (i % 2 == 0)
-        {
-            cout << i << endl;
-        }
+        cout << "fizbuxx" << endl;
+    }
+    else if (n % 3 == 0)
+    {
+        cout << "fizz";
+    }
+    else if (n % 5 == 0)
+    {
+        cout << "buxx";
+    }
+    else
+    {
+        cout << "nothing";
     }
 }
