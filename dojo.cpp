@@ -8,24 +8,21 @@ int main()
 
     int n;
     cin >> n;
-    for (int i = 1; i <= n; i++)
-    {
-        if (i % 4 == 0)
-        {
-            continue;
-        }
+    int digitct = 0;
 
-        if ((i % 3 == 0) && (i % 5 == 0))
+    if (n < 1000000000)
+    {
+        for (int num = n; num > 0; num = num / 10)
         {
-            cout << "fizzbuzz";
-        }
-        else if (i % 3 == 0)
-        {
-            cout << "fizz";
-        }
-        else if (i % 5 == 0)
-        {
-            cout << "buzz";
+            digitct++;
         }
     }
+    if (n > 1000000000)
+    {
+        for (int num = n; num > 0; num = num / 100)
+        {
+            digitct++;
+        }
+    }
+    cout << "it has " << digitct << " digits";
 }
